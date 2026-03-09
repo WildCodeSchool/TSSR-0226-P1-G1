@@ -1,1 +1,101 @@
-**PROJET**
+
+# **PROJET : AUDIT DE ROBUSTESSE DES MOTS DE PASSE**
+
+
+
+# Le projet
+
+Le projet réalisé permet de tester le logiciel [_**John The Ripper**_](https://www.openwall.com/john/) à partir d'un poste client Linux. Il permet de tester la robustesse des mot de passe , dans le cas présent d'un fichier .zip, sur un client utilisant Windows 10/11 et sur un serveur Windows 2025.
+
+Nous allons également utiliser [_**HashCat**_](https://hashcat.net/hashcat/) pour réaliser les mêmes taches.
+
+Les attaques seront commises par *dictionnaire* et par *force brut* avec **John The Ripper**.
+Concernant **HashCat** , nous utiliserons des masques d'attaque.
+
+L'objectif final est de réaliser un audit sur la robustesse des mots de passe de nos fichiers .zip.
+
+# John The Ripper et HashCat , c'est quoi ?
+
+- **Utilité**
+
+Ce sont des logiciel de cassage de mot de passe, afin de réaliser des audits en testant l'efficacité de ceux-ci.
+
+- **Possibilités**
+
+Pour casser les mots de passes, plusieurs possibilités s'offrent à nous. 
+Le mode simple, permet d'essayer des mots de passes en détournant le nom utilisateur.
+Le mode dictionnaire, utilise une **wordlist** téléchargeable , puis y ajoute le nom utilisateur pour plus de possibilités.
+Le mode force brute, essaye toutes les combinaisons de caractères possible jusqu'à atteindre son but.
+
+
+
+# Les membres du groupe et leurs rôles
+
+
+|            |                                                          **Sprint 1**                                                          |                                 **Sprint 2**                                 |     |
+| :--------: | :----------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------: | -
+| **Jeremy** |                                                                                                                                |                               _Product owner_:                               |     |
+| **Minjha** |                             _Product Owner_:  Maintenir la direction du projet. Remplir le backlog                             |                                                                              |     |
+| **Brice**  | _Scrum Master_: Assurer la coordination et les bonnes conditions de travail. Rédaction du README.md suivant l'avancé du projet |                                                                              |     |
+| **Zishan** |                                      Installation des logiciels, prise de screens, test.                                       | _Scrum Master_: Assurer la coordination et les bonnes conditions de travail. |     |
+| **Commun** |                       Installation de toutes les VM et des logiciels pour pouvoir tester en même temps.                        |                                                                              
+
+
+# Choix techniques 
+
+Pour mener à bien notre projet, nous avons utilisé :
+
+**Machines clients** : 
+_________________________________________
+
+- *VM 1* : PROJET 1 - CLIENT WINDOWS 11 
+- *OS* : Windows 11
+- *Compte & Mot de passe* : Wilder, Azerty1*
+- *Adresse Ip* : 172.16.10.10
+- *Masque* : 255.255.255.0
+
+_________________________________________
+
+- *VM 2* :  PROJET 1 - CLIENT UBUNTU 
+- *OS* : Ubuntu 24.04
+- *Compte & Mot de passe* : wilder, Azerty1*
+- *Adresse Ip* : 172.16.10.20
+- *Masque* : 255.255.255.0
+
+_________________________________________
+
+- *VM 3* :  PROJET 1 - WindowsServer
+- *OS* : Windows Server 2025 GUI
+- *Compte & Mot de passe* : Administrator, Azerty1*
+- *Adresse Ip* : 172.16.10.5
+- *Masque* : 255.255.255.0
+
+_________________________________________
+
+- *VM 4* : PROJET 1 - DebianServer 
+- *OS* : Debian 13 CLI
+- *Compte & Mot de passe* : Root, Azerty1*
+- *Adresse Ip* : 172.16.10.6
+- *Masque* : 255.255.255.0
+_________________________________________
+
+**Logiciels**
+
+- *John The Ripper v 1.9.0* : [Lien de Téléchargement](https://www.openwall.com/john/) , [Lien de documentation](https://www.openwall.com/john/doc/)
+- *HashCat v 6.2.6* : [Lien de Téléchargement](https://hashcat.net/hashcat/) , [Lien de documentation](https://github.com/hashcat/hashcat-utils/tree/master/docs)
+
+
+
+# Difficultés rencontrées 
+
+
+
+
+
+
+# Solutions trouvées 
+
+
+
+
+# Améliorations possibles
