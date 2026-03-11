@@ -76,14 +76,14 @@ _______________________________________
 - *HashCat v 7.1.2* : [Lien de Téléchargement](https://hashcat.net/hashcat/) , [Lien de documentation](https://github.com/hashcat/hashcat-utils/tree/master/docs)
 
 
-# Difficultés rencontrées 
+# **Difficultés et solutions rencontrées:**
 
-
-
-
-
-
-# Solutions trouvées 
+| **Difficultées**                                           |                                                       **Solutions** |
+| :--------------------------------------------------------- | ------------------------------------------------------------------: |
+| Logiciel peu efficace avec le paquet apt                   |                                    Installation du paquet avec snap |
+| Capacité  de base limitée en liste de mots                 |            Installation d'un paquet de liste supplémentaire openssl |
+| Erreur "Signature Unmatched" lors du décryptage du hash.   |    Remise au propre du hash grâce a la commande " cut -d ':' -f2 " |
+| Accéder aux dossier du serveur par la machine qui attaque. | Utilisation des protocoles CIPS pour faciliter l'accès au dossier  |
 
 
 
