@@ -14,8 +14,8 @@ Nous aurons besoin d'installer également [_**John The Ripper**_](https://www.op
 Grâce aux protocoles cifs et à l'IP de la machine nous allons récupérer, depuis notre serveur Debian, le **fichier1.zip**. 
 
 ``` bash
-smbclient -L 172.16.10.10 -U Wilder
-smbclient "//172.16.10.10/A partager/" -U Wilder
+smbclient -L 172.16.10.5 -U Wilder
+smbclient "//172.16.10.5/A partager/" -U Wilder
 ```
 
 Après avoir entré le password Wilder, un shell SMB s'ouvre. Nous pouvons donc vérifier le contenu du dossier et télécharger le **fichier1.zip**
