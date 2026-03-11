@@ -15,7 +15,7 @@ L'objectif final est de réaliser un audit sur la robustesse des mots de passe d
 
 Voici le schéma du lab sur lequel nous travaillerons. 
 
-![LAB](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Lab1.drawio.png)
+![LAB](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Projet1-G1.drawio.png)
 
 
 # John The Ripper et HashCat , c'est quoi ?
