@@ -11,9 +11,10 @@ Pour utiliser **HashCat**, il nous faut un dossier compressé et sécurisé qui 
 
 Nous aurons besoin d'installer également [_**John The Ripper**_](https://www.openwall.com/john/) pour récupérer zip2john, et les protocoles cifs.
 
-Grâce aux paquets cifs et à l'IP de la machine nous allons récupérer, depuis notre serveur Debian, le **fichier1.zip**. 
+Grâce aux protocoles cifs et à l'IP de la machine nous allons récupérer, depuis notre serveur Debian, le **fichier1.zip**. 
 
 ``` bash
+smbclient -L 172.16.10.10 -U Wilder
 smbclient "//172.16.10.10"/A partager/" -U Wilder
 ```
 
@@ -31,10 +32,20 @@ cd john/run/
 ./zip2john "/root/fichier1.zip" > hash.txt
 ```
 
-Une fois le hash récupérer, il nous reste simplement à le décrypter grâce a HashCat 
+Une fois le hash récupérer, il est préférable de le lancer et de le vérifier.
+
+![HASHBUG|1264](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/HAS_MAUVAIS.png)
+
+Sur l'exemple au dessus, le hash commence par le nom de notre fichier, ce qui peut poser problème lors du décryptage . Pour y remédier,  nous allons le mettre au propre.
 
 ``` bash
-hashcat -m 17200 hast.txt -a 3 
+cut -d ':' -f2 hash.txt > clean_hash.txt
+```
+
+Maintenant, il nous reste plus à le décrypter grâce a HashCat 
+
+``` bash
+hashcat -m 17200 clean_hast.txt -a 3 
 ```
 
 ## Utilisation avancé 
@@ -49,19 +60,17 @@ Les premières étapes sont les mêmes que pour la méthode simple. On récupèr
 Sachant que nous connaissons une partie du mot de passe : 
 
 ``` bash
-hashcat -m 17200 hast.txt -a 3 Livre?u?l?l?l?d?d
+hashcat -m 17200 clean_hast.txt -a 3 Livre?u?l?l?l?d?d
 ```
 
 Une fois le *hash* décrypté , on va lancer la commande pour afficher le mot de passe .
 
 ``` bash
-hashcat -m 17200 show hash.txt
+hashcat -m 17200 --show clean_hash.txt
 ```
 
-Une ligne de commande s'affiche et le mot de passe se situe à la fin.
+Une ligne de commande s'affiche avec votre hash et le mot de passe se situe à la fin.
 
 Voilà, vous avez récupérez votre mot de passe ! 
-
-## F.A.Q
 _________________________
 
