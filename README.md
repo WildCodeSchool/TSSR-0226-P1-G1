@@ -13,6 +13,11 @@ Concernant **HashCat** , nous utiliserons des masques d'attaque.
 
 L'objectif final est de réaliser un audit sur la robustesse des mots de passe de nos fichiers .zip.
 
+Voici le schéma du lab sur lequel nous travaillerons. 
+
+![LAB](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Lab1.drawio.png)
+
+
 # John The Ripper et HashCat , c'est quoi ?
 
 - **Utilité**
