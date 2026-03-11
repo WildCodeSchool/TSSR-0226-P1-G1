@@ -9,7 +9,7 @@ C'est un logiciel open source , exploitant la puissance des GPU pour déchiffrer
 
 Pour utiliser **HashCat**, il nous faut un dossier compressé et sécurisé qui sera pour notre projet en .zip sur une machine Windows 10.
 
-Nous aurons besoin d'installer également [_**John The Ripper**_](https://www.openwall.com/john/) pour récupérer zip2john, et les paquets cifs.
+Nous aurons besoin d'installer également [_**John The Ripper**_](https://www.openwall.com/john/) pour récupérer zip2john, et les protocoles cifs.
 
 Grâce aux paquets cifs et à l'IP de la machine nous allons récupérer, depuis notre serveur Debian, le **fichier1.zip**. 
 
