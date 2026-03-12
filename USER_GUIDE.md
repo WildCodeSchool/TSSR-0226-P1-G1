@@ -137,3 +137,16 @@ On peut enfin afficher le mot de passe cracké.
 ``` bash
 /snap/bin/john --show --format=PKZIP /home/wilder/audit/hash_fichier1.txt
 ```
+Une ligne de commande s'affiche avec le hash et le mot de passe.
+
+Voilà, vous avez récupérez votre mot de passe !
+
+## FAQ
+
+**Q1**: J'ai une erreur 113 lorsque j'essaye de récupérer le fichier1.zip sur ma machine Windows.
+
+**R1**: Vérifier que le dossier est bien partagé "à tout le monde" sur la machine Windows.
+
+**Q2**: Lorsque je veux décrypté mon hash, il me dit No hashed loaded.
+
+**R2**: Vérifier bien que le hash ne commence pas par le nom du fichier zip, dans ce cas utiliser la commande pour nettoyer le hash.
