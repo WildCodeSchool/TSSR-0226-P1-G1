@@ -126,6 +126,7 @@ Vous devriez avoir un message qui confirme la fin du make :
 
 L'outil zip2john sera dans jonh/run/ 
 
+# FAQ
 ``` bash
 ls ../run/zip2john
 ```
