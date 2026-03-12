@@ -1,3 +1,15 @@
+# Sommaire
+
+- [**Guide d'utilisation HashCat**](#guide-dutilisation-hashcat)
+- [**HashCat**](#hashcat)
+  -  [**Utilisation de base**](#utilisation-de-base)
+  -  [**Utilisation avancée**](#utilisation-avancee)
+
+- [**Guide d'utilisation JohnTheRipper**](#guide-dutilisation-johntheripper)
+- [**John The Ripper**](#johntheripper)
+  -  [**Utilisation de base**](#utilisation-de-base)
+  -  [**Utilisation avancée**](#utilisation-avancee)
+
 # Guide d'utilisation HashCat
 
 ## HashCat
@@ -49,7 +61,7 @@ Maintenant, il nous reste plus à le décrypter grâce a HashCat
 hashcat -m 17200 clean_hast.txt -a 3 
 ```
 
-## Utilisation avancé 
+## Utilisation avancée
 
 Dans les fonctions avancées nous allons tester l'attaque par *masque d'attaque* .
 
@@ -109,7 +121,7 @@ Nous allons maintenant extraire le hash.
 /snap/john-the-ripper/694/bin/zip2john /mnt/windows_client/fichier1.zip > /home/wilder/audit/hash_fichier1.txt
 ```
 
-## Utilisation avancé 
+## Utilisation avancée
 
 Dans les fonctions avancées nous allons tester l'attaque par *dictionnaire* .
 
