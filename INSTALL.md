@@ -36,7 +36,7 @@ Les machines et les serveurs étant sur le même réseau, nous allons devoir cr�
 sudo apt install cifs-utils -y
 ```
 
-[Screen cifs](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Protocole_cifs.png)
+![Screen cifs](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Protocole_cifs.png)
 
 John The Ripper peut être installer directement un utilisant apt ou snap.
 Nous avons rencontré plusieurs dysfonctionnements en l'installant avec la commande apt.
@@ -49,7 +49,7 @@ sudo apt update
 sudo apt install snap
 ```
 
-[Screen Snap](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Install_Snap.png)
+![Screen Snap](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Install_Snap.png)
 
 **Installer John The Ripper**
 
@@ -57,11 +57,11 @@ sudo apt install snap
 sudo snap install john-the-ripper
 ```
 
-[Screen JTR](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Install_JohnTheRipper.png)
+![Screen JTR](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Install_JohnTheRipper.png)
 
 Tapez maintenant John dans votre terminal, il vous affichera ceci :
 
-[Screen John](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/John.png)
+![Screen John](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/John.png)
 
 Nous pouvons voir la version du logiciel (ici 1.9.0). La ligne **usage** montre que nous pouvons fournir à John un fichier contenant une liste de mots de passe ainsi que choisir l'option avec laquelle il va tenter de déchiffrer les fichiers que nous lui indiquerons.
 
