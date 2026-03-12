@@ -1,7 +1,13 @@
 
 # **PROJET : AUDIT DE ROBUSTESSE DES MOTS DE PASSE**
 
-
+# Sommaire
+- [Présentation du projet](#le-projet)
+- [John The Ripper et HashCat c'est quoi ?](#john-the-ripper-et-hashcat-c-est-quoi)
+- [Les membres du groupes](#les-membres-du-groupe-et-leurs-rôles)
+- [Choix Techniques](#choix-techniques)
+- [Difficultés et solutions rencontrées](#difficultés-et-solutions-rencontrées)
+- [Améliorations possibles](#améliorations-possibles)
 # Le projet
 
 Le projet réalisé permet de tester la vulnerabilité des mots de passes grâce au logiciel [_**John The Ripper**_](https://www.openwall.com/john/) à partir d'un poste client Linux. Il permet de tester la robustesse des mots de passe , dans le cas présent d'un fichier .zip, sur un client utilisant Windows 10/11 et sur un serveur Windows 2025.
@@ -15,10 +21,9 @@ L'objectif final est de réaliser un audit sur la robustesse des mots de passe d
 
 Voici le schéma du lab sur lequel nous travaillerons. 
 
-![LAB](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Projet1-G1.drawio%20(1).png)
+![LAB](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Lab1.drawio.png)
 
-
-# John The Ripper et HashCat , c'est quoi ?
+# John The Ripper et HashCat c'est quoi ?
 
 - **Utilité**
 
@@ -30,7 +35,6 @@ Pour casser les mots de passes, plusieurs possibilités s'offrent à nous.
 Le mode simple, permet d'essayer des mots de passes en détournant le nom utilisateur.
 Le mode dictionnaire, utilise une **wordlist** téléchargeable , puis y ajoute le nom utilisateur pour plus de possibilités.
 Le mode force brute, essaye toutes les combinaisons de caractères possible jusqu'à atteindre son but.
-Le mode masque d'attaque, essaye des combinaisons lorsque l'on connait au moins la structure du mot de passe.
 
 
 # Les membres du groupe et leurs rôles
@@ -52,25 +56,25 @@ Pour mener à bien notre projet, nous avons utilisé :
 **Machines clients** : 
 
 _______________________________________
-- *VM 1* : WIN01 - CLIENT WINDOWS 11 
+- *VM 1* : PROJET 1 - CLIENT WINDOWS 11 
 - *OS* : Windows 11
 - *Compte & Mot de passe* : Wilder, Azerty1*
 - *Adresse Ip* : 172.16.10.10
 - *Masque* : 255.255.255.0
 _______________________________________
-- *VM 2* :  UBU01 - CLIENT UBUNTU 
+- *VM 2* :  PROJET 1 - CLIENT UBUNTU 
 - *OS* : Ubuntu 24.04
 - *Compte & Mot de passe* : wilder, Azerty1*
 - *Adresse Ip* : 172.16.10.20
 - *Masque* : 255.255.255.0
 _______________________________________
-- *VM 3* :  SRVWIN01 - WindowsServer
+- *VM 3* :  PROJET 1 - WindowsServer
 - *OS* : Windows Server 2025 GUI
 - *Compte & Mot de passe* : Administrator, Azerty1*
 - *Adresse Ip* : 172.16.10.5
 - *Masque* : 255.255.255.0
 _______________________________________
-- *VM 4* : SRVLX01 - DebianServer 
+- *VM 4* : PROJET 1 - DebianServer 
 - *OS* : Debian 13 CLI
 - *Compte & Mot de passe* : Root, Azerty1*
 - *Adresse Ip* : 172.16.10.6
@@ -82,14 +86,14 @@ _______________________________________
 - *HashCat v 7.1.2* : [Lien de Téléchargement](https://hashcat.net/hashcat/) , [Lien de documentation](https://github.com/hashcat/hashcat-utils/tree/master/docs)
 
 
-# **Difficultés et solutions rencontrées:**
+## **Difficultés et solutions rencontrées:**
 
 | **Difficultées**                                           |                                                       **Solutions** |
 | :--------------------------------------------------------- | ------------------------------------------------------------------: |
 | Logiciel peu efficace avec le paquet apt                   |                                    Installation du paquet avec snap |
 | Capacité  de base limitée en liste de mots                 |            Installation d'un paquet de liste supplémentaire openssl |
-| Erreur "Signature Unmatched" lors du décryptage du hash.   |    Remise au propre du hash grâce a la commande " cut -d ':' -f2 " |
-| Accéder aux dossier du serveur par la machine qui attaque. | Utilisation des protocoles CIPS pour faciliter l'accès au dossier  |
+| Erreur "Signature Unmatched" lors du décryptage du hash.   |    Remise au propre du hash grâce a la commande " cut -d ':' -f2 ". |
+| Accéder aux dossier du serveur par la machine qui attaque. | Utilisation des protocoles CIPS pour faciliter l'accès au dossier . |
 
 
 
