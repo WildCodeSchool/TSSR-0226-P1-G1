@@ -15,7 +15,7 @@ Grâce aux protocoles cifs et à l'IP de la machine nous allons récupérer, dep
 
 ``` bash
 smbclient -L 172.16.10.5 -U Wilder
-smbclient "//172.16.10.5"/audit/" -U Wilder
+smbclient "//172.16.10.5/audit/" -U Wilder
 ```
 
 Après avoir entré le password Wilder, un shell SMB s'ouvre. Nous pouvons donc vérifier le contenu du dossier et télécharger le **fichier2.zip**
