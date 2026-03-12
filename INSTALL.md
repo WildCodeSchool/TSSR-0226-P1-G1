@@ -13,7 +13,7 @@ Il n'y a aucune contrainte technique concernant l'utilisation des logiciels, mis
 
 Les machines et les serveurs étant sur le même réseau, nous allons devoir créer un dossier partagé sur notre machine Windows et sur notre Windows serveur.
 
-## Windows Serveur.
+## Windows Serveur
 
 - Créez depuis la session Administrator un nouvel utilisateur et le mettre dans le groupe admin .
 - Quittez la session Administrator et connectez vous à la session du nouvel utilisateur, ici *Wilder*.
@@ -28,7 +28,7 @@ Les machines et les serveurs étant sur le même réseau, nous allons devoir cr�
 - Allez dans les propriétés du dossier pour le partager *à tout le monde*.
 - Pour la suite, il faut retenir : Le **nom d'utilisateur** , le **mot de passe utilisateur**, le **nom du dossier partagé** et l'**adresse IP** du serveur. 
 
-## Installation de John The Ripper sur Ubuntu.
+## Installation de John The Ripper sur Ubuntu
 
 **Installer les protocoles cifs**
 
