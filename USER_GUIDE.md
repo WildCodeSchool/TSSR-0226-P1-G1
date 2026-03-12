@@ -7,6 +7,7 @@
 - [**John The Ripper**](#johntheripper)
   -  [**Utilisation de base**](#utilisation-de-base-1)
   -  [**Utilisation avancée**](#utilisation-avancée-1)
+- [**FAQ**](#faq)
 
 # Guide d'utilisation HashCat
 
