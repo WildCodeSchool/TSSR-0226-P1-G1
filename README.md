@@ -7,8 +7,9 @@
 - [**Les membres du groupes**](#les-membres-du-groupe-et-leurs-rôles)
 - [**Choix Techniques**](#choix-techniques)
 - [**Difficultés et solutions rencontrées**](#difficultés-et-solutions-rencontrées)
-- [**Améliorations possibles**](#améliorations-possibles)
 - [**Logiciels**](#logiciels)
+- [**Améliorations possibles**](#améliorations-possibles)
+
 # Le projet
 
 Le projet réalisé permet de tester la vulnerabilité des mots de passes grâce au logiciel [_**John The Ripper**_](https://www.openwall.com/john/) à partir d'un poste client Linux. Il permet de tester la robustesse des mots de passe , dans le cas présent d'un fichier .zip, sur un client utilisant Windows 10/11 et sur un serveur Windows 2025.
