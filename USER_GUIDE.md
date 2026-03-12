@@ -7,15 +7,15 @@ C'est un logiciel open source , exploitant la puissance des GPU pour déchiffrer
 
 ## Utilisation de base 
 
-Pour illustrer l'utilisation de **HashCat**, nous allons tenter de retrouver le mot de passe d'un fichier .zip chiffré, hébergé sur une machine Windows 10.
+Pour illustrer l'utilisation de **HashCat**, nous allons tenter de retrouver le mot de passe d'un fichier .zip chiffré, hébergé sur une machine Windows server.
 
 Nous aurons besoin d'installer également [_**John The Ripper**_](https://www.openwall.com/john/) pour récupérer zip2john, et les protocoles cifs.
 
 Grâce aux protocoles cifs et à l'IP de la machine nous allons récupérer, depuis notre serveur Debian, le **fichier2.zip**. 
 
 ``` bash
-smbclient -L 172.16.10.10 -U Wilder
-smbclient "//172.16.10.10"/audit/" -U Wilder
+smbclient -L 172.16.10.5 -U Wilder
+smbclient "//172.16.10.5"/audit/" -U Wilder
 ```
 
 Après avoir entré le password Wilder, un shell SMB s'ouvre. Nous pouvons donc vérifier le contenu du dossier et télécharger le **fichier2.zip**
