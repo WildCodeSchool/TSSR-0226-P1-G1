@@ -1,4 +1,3 @@
-
 # Guide d'utilisation HashCat
 
 ## HashCat
@@ -34,7 +33,7 @@ cd john/run/
 ./zip2john "/root/fichier2.zip" > hash.txt
 ```
 
-Une fois le hash récupérer, il est préférable de le lancer et de le vérifier.
+Une fois le hash récupéré, il est préférable de le lancer et de le vérifier.
 
 ![HASHBUG|1264](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/HAS_MAUVAIS.png)
 
@@ -62,7 +61,7 @@ Les premières étapes sont les mêmes que pour la méthode simple. On récupèr
 Sachant que nous connaissons une partie du mot de passe : 
 
 ``` bash
-hashcat -m 17200 clean_hast.txt -a 3 Livre?u?l?l?l?d?d
+hashcat -m 17200 clean_hash.txt -a 3 Livre?u?l?l?l?d?d
 ```
 
 Une fois le *hash* décrypté , on va lancer la commande pour afficher le mot de passe .
