@@ -1,11 +1,9 @@
 # Sommaire
 
-- [**Guide d'utilisation HashCat**](#guide-dutilisation-hashcat)
 - [**HashCat**](#hashcat)
   -  [**Utilisation de base**](#utilisation-de-base)
   -  [**Utilisation avancée**](#utilisation-avancée)
 
-- [**Guide d'utilisation JohnTheRipper**](#guide-dutilisation-johntheripper)
 - [**John The Ripper**](#johntheripper)
   -  [**Utilisation de base**](#utilisation-de-base-1)
   -  [**Utilisation avancée**](#utilisation-avancée-1)
