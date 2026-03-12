@@ -15,7 +15,7 @@ Les logiciels John The Ripper et HashCat sont des logiciels open source qui perm
 
 
 Ces deux logiciels fonctionnent de façon similaire sur différents OS. Dans ce guide nous verrons les étapes d'installations des logiciels sur un système **Debian 13** et **Ubuntu 24.04.4**.
-Il n'y a aucune contrainte technique concernant l'utilisation des logiciels, mise à part la connaissance et le terminal des systèmes Ubuntu et Debian.
+Il n'y a aucune contrainte technique concernant l'utilisation des logiciels, mise à part la connaissance des systèmes Ubuntu et Debian ainsi que leurs terminaux.
 
 # Installation d'un dossier partagé sur Windows et Windows serveur.
 
