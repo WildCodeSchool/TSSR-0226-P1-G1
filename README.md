@@ -3,7 +3,7 @@
 
 # Sommaire
 - [Présentation du projet](#le-projet)
-- [John The Ripper et HashCat c'est quoi ?](#john-the-ripper-et-hashcat-cest-quoi)
+- [John The Ripper et HashCat c'est quoi ?](#john-the-ripper-et-hashcat-cest-quoi-)
 - [Les membres du groupes](#les-membres-du-groupe-et-leurs-rôles)
 - [Choix Techniques](#choix-techniques)
 - [Difficultés et solutions rencontrées](#difficultés-et-solutions-rencontrées)
