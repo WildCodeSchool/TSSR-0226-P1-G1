@@ -19,7 +19,7 @@ C'est un logiciel open source , exploitant la puissance des GPU pour déchiffrer
 
 Pour illustrer l'utilisation de **HashCat**, nous allons tenter de retrouver le mot de passe d'un fichier .zip chiffré, hébergé sur une machine Windows server.
 
-Nous aurons besoin d'installer également [_**John The Ripper**_](https://www.openwall.com/john/) pour récupérer zip2john, et les protocoles cifs.
+Nous aurons besoin d'installer également [_**John The Ripper**_](https://www.openwall.com/john/) pour récupérer zip2john, et d'installer les protocoles cifs.
 
 Grâce aux protocoles cifs et à l'IP de la machine nous allons récupérer, depuis notre serveur Debian, le **fichier2.zip**. 
 
@@ -35,7 +35,7 @@ ls
 get fichier2.zip
 ```
 
-Quittez le shell SMB 
+Quittez le shell SMB en faisant CTRL+C
 
 Depuis notre serveur **Debian**, nous allons lancer zip2john sur le fichier ciblé en redirigeant la sortie dans un fichier texte pour récupérer le hash du mot de passe avec la commande : 
 
@@ -54,7 +54,7 @@ Sur l'exemple au dessus, le hash commence par le nom de notre fichier, ce qui pe
 cut -d ':' -f2 hash.txt > clean_hash.txt
 ```
 
-Maintenant, il nous reste plus à le décrypter grâce a HashCat 
+Maintenant, il nous reste plus qu'à le décrypter grâce a HashCat 
 
 ``` bash
 hashcat -m 17200 clean_hast.txt -a 3 
@@ -96,9 +96,7 @@ C'est un logiciel libre de crackage de mots de passe.
 
 Pour utiliser **JohnTheRipper**, il nous faut un dossier compressé et sécurisé qui sera pour notre projet en .zip sur une machine Windows 10.
 
-Nous aurons besoin d'installer également [_**John The Ripper**_](https://www.openwall.com/john/) pour récupérer zip2john, et les protocoles cifs.
-
-Grâce aux protocoles cifs et à l'IP de la machine nous allons récupérer, depuis notre machine Windows, le **fichier1.zip**. 
+Nous aurons besoin d'installer également les protocoles cifs.
 
 D'abord il faudra créer le dossier de travail sur notre machine Linux. 
 
@@ -107,7 +105,7 @@ mkdir -p ~/audit
 cd ~/audit
 ```
 
-Ensuite, créer le point de montage et monter le partage grâce aux protocoles **CIFS**.
+Ensuite, créer le point de montage et monter le partage grâce aux protocoles cifs
 
 ``` bash
 sudo mkdir -p /mnt/windows_client
