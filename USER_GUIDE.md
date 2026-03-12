@@ -155,8 +155,8 @@ Voilà, vous avez récupérez votre mot de passe !
 
 **Q1**: J'ai une erreur 113 lorsque j'essaye de récupérer le fichier1.zip sur ma machine Windows.
 
-**R1**: Vérifier que le dossier est bien partagé "à tout le monde" sur la machine Windows.
+**R1**: Vérifiez que le dossier est bien partagé "à tout le monde" sur la machine Windows.
 
-**Q2**: Lorsque je veux décrypté mon hash, il me dit No hashed loaded.
+**Q2**: Lorsque je veux décrypter mon hash, il me dit No hashed loaded.
 
-**R2**: Vérifier bien que le hash ne commence pas par le nom du fichier zip, dans ce cas utiliser la commande pour nettoyer le hash.
+**R2**: Vérifiez bien que le hash ne commence pas par le nom du fichier zip, dans ce cas utilisez la commande pour nettoyer le hash.
