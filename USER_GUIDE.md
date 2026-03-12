@@ -25,6 +25,8 @@ ls
 get fichier2.zip
 ```
 
+Quittez le shell SMB 
+
 Depuis notre serveur **Debian**, nous allons lancer zip2john sur le fichier ciblé en redirigeant la sortie dans un fichier texte pour récupérer le hash du mot de passe avec la commande : 
 
 ``` bash
