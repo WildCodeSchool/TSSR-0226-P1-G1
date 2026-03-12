@@ -51,25 +51,25 @@ Pour mener à bien notre projet, nous avons utilisé :
 **Machines clients** : 
 
 _______________________________________
-- *VM 1* : PROJET 1 - CLIENT WINDOWS 11 
+- *VM 1* : WIN01 - CLIENT WINDOWS 11 
 - *OS* : Windows 11
 - *Compte & Mot de passe* : Wilder, Azerty1*
 - *Adresse Ip* : 172.16.10.10
 - *Masque* : 255.255.255.0
 _______________________________________
-- *VM 2* :  PROJET 1 - CLIENT UBUNTU 
+- *VM 2* :  UBU01 - CLIENT UBUNTU 
 - *OS* : Ubuntu 24.04
 - *Compte & Mot de passe* : wilder, Azerty1*
 - *Adresse Ip* : 172.16.10.20
 - *Masque* : 255.255.255.0
 _______________________________________
-- *VM 3* :  PROJET 1 - WindowsServer
+- *VM 3* :  SRVWIN01 - WindowsServer
 - *OS* : Windows Server 2025 GUI
 - *Compte & Mot de passe* : Administrator, Azerty1*
 - *Adresse Ip* : 172.16.10.5
 - *Masque* : 255.255.255.0
 _______________________________________
-- *VM 4* : PROJET 1 - DebianServer 
+- *VM 4* : SRVLX01 - DebianServer 
 - *OS* : Debian 13 CLI
 - *Compte & Mot de passe* : Root, Azerty1*
 - *Adresse Ip* : 172.16.10.6
