@@ -66,7 +66,7 @@ Dans les fonctions avancées nous allons tester l'attaque par *masque d'attaque*
 
 ### L'attaque par masque d'attaque . 
 
-Pour faire une attaque par masque , il faut d'abord savoir la structure probable du mot de passe . C'est une attaque utile quand on connais une partie du mot de passe ou son format.
+Pour faire une attaque par masque , il faut d'abord connaître la structure probable du mot de passe . C'est une attaque utile quand on connait une partie du mot de passe ou son format.
 
 Les premières étapes sont les mêmes que pour la méthode simple. On récupère le *hash* du fichier cible, une fois fait on lance la commande pour faire l'attaque par masque d'attaque.
 Sachant que nous connaissons une partie du mot de passe : 
@@ -83,7 +83,7 @@ hashcat -m 17200 --show clean_hash.txt
 
 Une ligne de commande s'affiche avec votre hash et le mot de passe se situe à la fin.
 
-Voilà, vous avez récupérez votre mot de passe ! 
+Voilà, vous avez récupéré votre mot de passe ! 
 _________________________
 
 # Guide d'utilisation JohnTheRipper
@@ -130,7 +130,7 @@ Les premières étapes sont les mêmes que pour la méthode simple. On récupèr
 curl -L https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt -o /home/wilder/audit/rockyou.txt
 ```
 
-Vérifier que tous les fichiers sont là .
+Vérifiez que tous les fichiers sont là .
 
 ``` bash
 ls /home/wilder/audit/
@@ -149,14 +149,14 @@ On peut enfin afficher le mot de passe cracké.
 ```
 Une ligne de commande s'affiche avec le hash et le mot de passe.
 
-Voilà, vous avez récupérez votre mot de passe !
+Voilà, vous avez récupéré votre mot de passe !
 
 ## FAQ
 
-**Q1**: J'ai une erreur 113 lorsque j'essaye de récupérer le fichier1.zip sur ma machine Windows.
+**Q1**: J'ai une erreur **113** lorsque j'essaye de récupérer le fichier1.zip sur ma machine Windows.
 
 **R1**: Vérifiez que le dossier est bien partagé "à tout le monde" sur la machine Windows.
 
-**Q2**: Lorsque je veux décrypter mon hash, il me dit No hashed loaded.
+**Q2**: Lorsque je veux décrypter mon hash, il me dit **No hashed loaded**.
 
 **R2**: Vérifiez bien que le hash ne commence pas par le nom du fichier zip, dans ce cas utilisez la commande pour nettoyer le hash.
