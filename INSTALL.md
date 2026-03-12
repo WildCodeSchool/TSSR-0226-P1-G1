@@ -5,12 +5,12 @@ Les logiciels John The Ripper et HashCat sont des logiciels open source qui perm
 
 # Sommaire
 
-- [Guide d'installation des logiciels John The Ripper et HashCat](#guide-dinstallation-des-logiciels-john-the-ripper-et-hashcat)
-- [Prérequis techniques](#prérequis-techniques)
-- [Installation d'un dossier partagé sur Windows et Windows Serveur](#installation-dun-dossier-partagé-sur-windows-et-windows-serveur)
-- [Installation de John The Ripper sur Ubuntu](#installation-de-john-the-ripper-sur-ubuntu)
-- [Installation de HashCat sur Debian](#installation-de-hashcat-sur-debian)
-- [FAQ](#faq)
+- [**Guide d'installation des logiciels John The Ripper et HashCat**](#guide-dinstallation-des-logiciels-john-the-ripper-et-hashcat)
+- [**Prérequis techniques**](#prérequis-techniques)
+- [**Installation d'un dossier partagé sur Windows et Windows Serveur**](#installation-dun-dossier-partagé-sur-windows-et-windows-serveur)
+- [**Installation de John The Ripper sur Ubuntu**](#installation-de-john-the-ripper-sur-ubuntu)
+- [**Installation de HashCat sur Debian**](#installation-de-hashcat-sur-debian)
+- [**FAQ**](#faq)
 
 # Prérequis techniques
 
