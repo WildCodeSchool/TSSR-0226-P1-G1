@@ -120,7 +120,7 @@ Les premières étapes sont les mêmes que pour la méthode simple. On récupèr
 curl -L https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt -o /home/wilder/audit/rockyou.txt
 ```
 
-Vérifier que tous les fichiers soient là .
+Vérifier que tous les fichiers sont là .
 
 ``` bash
 ls /home/wilder/audit/
