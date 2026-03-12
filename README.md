@@ -30,6 +30,7 @@ Pour casser les mots de passes, plusieurs possibilités s'offrent à nous.
 Le mode simple, permet d'essayer des mots de passes en détournant le nom utilisateur.
 Le mode dictionnaire, utilise une **wordlist** téléchargeable , puis y ajoute le nom utilisateur pour plus de possibilités.
 Le mode force brute, essaye toutes les combinaisons de caractères possible jusqu'à atteindre son but.
+Le mode masque d'attaque, essaye des combinaisons lorsque l'on connait au moins la structure du mot de passe.
 
 
 # Les membres du groupe et leurs rôles
