@@ -14,7 +14,7 @@ Les logiciels John The Ripper et HashCat sont des logiciels open source qui perm
 # Prérequis techniques
 
 
-Ces deux logiciels fonctionnent de façon similaire sur différents OS. Dans ce guide nous verrons les étapes d'installations des logiciels sur un système **Debian 13** et **Ubuntu 24.04.4**.
+Ces deux logiciels fonctionnent de façon similaire sur différents OS. Dans ce guide nous verrons les étapes d'installation des logiciels sur un système **Debian 13** et **Ubuntu 24.04.4**.
 Il n'y a aucune contrainte technique concernant l'utilisation des logiciels, mise à part la connaissance des systèmes Ubuntu et Debian ainsi que leurs terminaux.
 
 # Installation d'un dossier partagé sur Windows et Windows serveur.
@@ -46,7 +46,7 @@ sudo apt install cifs-utils -y
 
 ![Screen cifs](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Protocole_cifs.png)
 
-John The Ripper peut être installer directement un utilisant apt ou snap.
+John The Ripper peut être installé directement en utilisant apt ou snap.
 Nous avons rencontré plusieurs dysfonctionnements en l'installant avec la commande apt.
 Nous vous recommandons donc de procéder avec l'installation snap. Le format snap permet l'installation de logiciels séparés du reste du système d'exploitation grâce a des mécanismes de sécurité.
 
