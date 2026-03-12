@@ -1,5 +1,8 @@
 # Guide d'installation des logiciels John The Ripper et HashCat
 
+Vous êtes en possession d'un dossier crypté dont vous avez oublié le mot de passe ou vous êtes en entreprise et devez tester la force des mots de passe de votre service ?
+Les logiciels John The Ripper et HashCat sont des logiciels open source qui permettent de réaliser vos tests de façon rapide et simple afin d'assurer votre sécurité et celle de vos collaborateurs. 
+
 # Sommaire
 
 - [Guide d'installation des logiciels John The Ripper et HashCat](#guide-dinstallation-des-logiciels-john-the-ripper-et-hashcat)
@@ -8,9 +11,6 @@
 - [Installation de John The Ripper sur Ubuntu](#installation-de-john-the-ripper-sur-ubuntu)
 - [Installation de HashCat sur Debian](#installation-de-hashcat-sur-debian)
 - [FAQ](#faq)
-
-Vous êtes en possession d'un dossier crypté dont vous avez oublié le mot de passe ou vous êtes en entreprise et devez tester la force des mots de passe de votre service ?
-Les logiciels John The Ripper et HashCat sont des logiciels open source qui permettent de réaliser vos tests de façon rapide et simple afin d'assurer votre sécurité et celle de vos collaborateurs. 
 
 # Prérequis techniques
 
