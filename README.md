@@ -12,7 +12,7 @@
 
 # Le projet
 
-Le projet réalisé permet de tester la vulnerabilitée des mots de passes grâce aux logiciels [_**John The Ripper**_](https://www.openwall.com/john/) et [_**HashCat**_](https://hashcat.net/hashcat/). L'attaque avec **John The Ripper** s'effectuera d'une machine Linux à une machine Windows 11. Tandis que l'attaque avec **HashCat** s'effectuera d'un serveur Debian à un serveur Windows 2025.
+Le projet réalisé permet de tester la vulnerabilitée des mots de passe grâce aux logiciels [_**John The Ripper**_](https://www.openwall.com/john/) et [_**HashCat**_](https://hashcat.net/hashcat/). L'attaque avec **John The Ripper** s'effectuera d'une machine Linux à une machine Windows 11. Tandis que l'attaque avec **HashCat** s'effectuera d'un serveur Debian à un serveur Windows 2025.
 
 Les attaques seront commises par *dictionnaire* et par *force brut* avec **John The Ripper**.
 Concernant **HashCat** , nous utiliserons des masques d'attaque.
@@ -31,7 +31,7 @@ Ce sont des logiciels de cassage de mot de passe, afin de réaliser des audits e
 
 - **Possibilités**
 
-Pour casser les mots de passes, plusieurs possibilités s'offrent à nous. 
+Pour casser les mots de passe, plusieurs possibilités s'offrent à nous. 
 Le mode simple, permet d'essayer des mots de passes en détournant le nom utilisateur.
 Le mode dictionnaire, utilise une **wordlist** téléchargeable , puis y ajoute le nom utilisateur pour plus de possibilités.
 Le mode force brute, essaye toutes les combinaisons de caractères possible jusqu'à atteindre son but.
