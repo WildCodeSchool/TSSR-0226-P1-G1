@@ -11,25 +11,25 @@ Pour utiliser **HashCat**, il nous faut un dossier compressé et sécurisé qui 
 
 Nous aurons besoin d'installer également [_**John The Ripper**_](https://www.openwall.com/john/) pour récupérer zip2john, et les protocoles cifs.
 
-Grâce aux protocoles cifs et à l'IP de la machine nous allons récupérer, depuis notre serveur Debian, le **fichier1.zip**. 
+Grâce aux protocoles cifs et à l'IP de la machine nous allons récupérer, depuis notre serveur Debian, le **fichier2.zip**. 
 
 ``` bash
-smbclient -L 172.16.10.5 -U Wilder
-smbclient "//172.16.10.5/A partager/" -U Wilder
+smbclient -L 172.16.10.10 -U Wilder
+smbclient "//172.16.10.10"/audit/" -U Wilder
 ```
 
-Après avoir entré le password Wilder, un shell SMB s'ouvre. Nous pouvons donc vérifier le contenu du dossier et télécharger le **fichier1.zip**
+Après avoir entré le password Wilder, un shell SMB s'ouvre. Nous pouvons donc vérifier le contenu du dossier et télécharger le **fichier2.zip**
 
 ``` bash
 ls
-get fichier1.zip
+get fichier2.zip
 ```
 
 Depuis notre serveur **Debian**, nous allons lancer zip2john sur le fichier ciblé en redirigeant la sortie dans un fichier texte pour récupérer le hash du mot de passe avec la commande : 
 
 ``` bash
 cd john/run/
-./zip2john "/root/fichier1.zip" > hash.txt
+./zip2john "/root/fichier2.zip" > hash.txt
 ```
 
 Une fois le hash récupérer, il est préférable de le lancer et de le vérifier.
@@ -74,3 +74,66 @@ Une ligne de commande s'affiche avec votre hash et le mot de passe se situe à l
 Voilà, vous avez récupérez votre mot de passe ! 
 _________________________
 
+# Guide d'utilisation JohnTheRipper
+
+## JohnTheRipper
+
+C'est un logiciel libre de crackage de mots de passe.
+
+## Utilisation de base 
+
+Pour utiliser **JohnTheRipper**, il nous faut un dossier compressé et sécurisé qui sera pour notre projet en .zip sur une machine Windows 10.
+
+Nous aurons besoin d'installer également [_**John The Ripper**_](https://www.openwall.com/john/) pour récupérer zip2john, et les protocoles cifs.
+
+Grâce aux protocoles cifs et à l'IP de la machine nous allons récupérer, depuis notre machine Windows, le **fichier1.zip**. 
+
+D'abord il faudra créer le dossier de travail sur notre machine Linux. 
+
+``` bash
+mkdir -p ~/audit 
+cd ~/audit
+```
+
+Ensuite, créer le point de montage et monter le partage grâce aux protocoles **CIFS**.
+
+``` bash
+sudo mkdir -p /mnt/windows_client
+sudo mount -t cifs //172.16.10.10/audit /mnt/windows_client -o username=Wilder,password=Azerty1*
+```
+
+Nous allons maintenant extraire le hash.
+
+``` bash
+/snap/john-the-ripper/694/bin/zip2john /mnt/windows_client/fichier1.zip > /home/wilder/audit/hash_fichier1.txt
+```
+
+## Utilisation avancé 
+
+Dans les fonctions avancées nous allons tester l'attaque par *dictionnaire* .
+
+### L'attaque par dictionnaire.
+
+Les premières étapes sont les mêmes que pour la méthode simple. On récupère le *hash* du fichier cible, une fois fait on télécharge un fichier, en l'occurrence **rockyou.txt**, qui est une liste de mot de passe (wordlist) parmi les plus célèbre utilisé en cybersécurité et dans l'informatique.
+
+``` bash
+curl -L https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt -o /home/wilder/audit/rockyou.txt
+```
+
+Vérifier que tous les fichiers soient là .
+
+``` bash
+ls /home/wilder/audit/
+```
+
+Tout est là, nous allons pouvoir lancer l'attaque .
+
+``` bash
+/snap/bin/john --wordlist=/home/wilder/audit/rockyou.txt /home/wilder/audit/hash_fichier1.txt
+```
+
+On peut enfin afficher le mot de passe cracké.
+
+``` bash
+/snap/bin/john --show --format=PKZIP /home/wilder/audit/hash_fichier1.txt
+```
