@@ -71,5 +71,62 @@ Voici quelques exemples d'options envisageables pour John :
 2. **--wordlist** : l'attaque par dictionnaire. John utilise une liste de mots de passe fournis afin de craquer le mot de passe du fichier désigné.
 3. **--incremental** : brut force, John teste toutes les combinaisons de caractères jusqu’à trouver le mot de passe. Infaillible en théorie mais peut prendre du temps en fonction de la force du mot de passe du fichier sélectionné.
 
+
 ## Installation de HashCat sur Debian
+
+**Installer les protocoles cifs**
+
+``` bash
+apt install cifs-utils -y
+```
+
+![Protocole Cifs](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Protocole_cifs_debian1.png)
+
+**Installer HashCat**
+
+``` bash
+apt install hashcat
+```
+
+Plusieurs lignes de commande s'affichent, pour vérifier la version tapez :
+
+``` bash
+hashcat --version
+```
+
+![Version HashCat](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Hashcat1.png)
+
+**Installer John The Ripper pour avoir zip2john**
+
+Sur notre serveur Debian, l'installation par **snap** ne fonctionnera pas. Pour installer John The Ripper , vous aurez besoin d'installer quelques dépendances : 
+
+``` bash
+apt install git build-essential libssl-dev zlib1g-dev yasm pkg-config
+```
+
+Lorsque tout est bien installé, nous allons cloner sur GitHub le logiciel John The Ripper.
+
+``` bash
+git clone https://github.com/openwall/john.git
+```
+
+![JTR Clone](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/JTR_Debian1.png)
+
+Nous avons maintenant besoin de compiler ce que nous venons de cloner.
+
+``` bash 
+cd john/src
+./configure
+make -s clean && make -sj? (? est le nombre de processeur disponible)
+```
+
+Vous devriez avoir un message qui confirme la fin du make :
+
+![MakeFinish](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Make_completed1.png)
+
+L'outil zip2john sera dans jonh/run/ 
+
+``` bash
+ls ../run/zip2john
+```
 
