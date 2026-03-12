@@ -7,7 +7,7 @@ C'est un logiciel open source , exploitant la puissance des GPU pour déchiffrer
 
 ## Utilisation de base 
 
-Pour utiliser **HashCat**, il nous faut un dossier compressé et sécurisé qui sera pour notre projet en .zip sur une machine Windows 10.
+Pour illustrer l'utilisation de **HashCat**, nous allons tenter de retrouver le mot de passe d'un fichier .zip chiffré, hébergé sur une machine Windows 10.
 
 Nous aurons besoin d'installer également [_**John The Ripper**_](https://www.openwall.com/john/) pour récupérer zip2john, et les protocoles cifs.
 
