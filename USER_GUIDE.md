@@ -114,7 +114,7 @@ Dans les fonctions avancées nous allons tester l'attaque par *dictionnaire* .
 
 ### L'attaque par dictionnaire.
 
-Les premières étapes sont les mêmes que pour la méthode simple. On récupère le *hash* du fichier cible, une fois fait on télécharge un fichier, en l'occurrence **rockyou.txt**, qui est une liste de mot de passe (wordlist) parmi les plus célèbre utilisé en cybersécurité et dans l'informatique.
+Les premières étapes sont les mêmes que pour la méthode simple. On récupère le *hash* du fichier cible, une fois fait on télécharge un fichier, en l'occurrence **rockyou.txt**, qui est une liste de mot de passe (wordlist) parmi les plus célèbre utilisé en cybersécurité.
 
 ``` bash
 curl -L https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt -o /home/wilder/audit/rockyou.txt
