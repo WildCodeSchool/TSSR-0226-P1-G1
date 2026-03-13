@@ -87,8 +87,22 @@ Voici quelques exemples d'options envisageables pour John :
 ``` bash
 apt install cifs-utils -y
 ```
-
 ![Protocole Cifs](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Protocole_cifs_debian1.png)
+
+**Installer SMB Client**
+
+``` bash
+apt install smbclient
+```
+
+Pour vérifier la version tapez :
+
+``` bash
+smbclient --version
+```
+
+![Protocole SMB Client](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Version_SMBCLIENT1.png)
+
 
 **Installer HashCat**
 
