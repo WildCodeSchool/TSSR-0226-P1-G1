@@ -151,6 +151,18 @@ Une ligne de commande s'affiche avec le hash et le mot de passe.
 
 Voilà, vous avez récupéré votre mot de passe !
 
+## L'attaque en force brute
+
+Les premières étapes sont les mêmes que pour la méthode simple. On récupère le *hash* du fichier cible, une fois fait on peut lancer l'attaque.
+
+``` bash
+john --incremental hash_fichier1.txt
+```
+
+Cela peut prendre beaucoup de temps suivant la compléxité du mot de passe. 
+
+Une fois fini vous avez récupéré votre mot de passe ! 
+
 ## FAQ
 
 **Q1**: J'ai une erreur **113** lorsque j'essaye de récupérer le fichier1.zip sur ma machine Windows.
