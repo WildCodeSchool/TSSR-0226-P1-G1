@@ -100,4 +100,4 @@ _______________________________________
 
 # Améliorations possibles
 
-
+N'utilisez pas ces logiciels de façon malveillante ! 
