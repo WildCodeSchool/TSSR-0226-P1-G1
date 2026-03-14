@@ -9,6 +9,7 @@ Les logiciels John The Ripper et HashCat sont des logiciels open source qui perm
 - [**Installation d'un dossier partagé sur Windows et Windows Serveur**](#installation-dun-dossier-partagé-sur-windows-et-windows-serveur)
 - [**Installation de John The Ripper sur Ubuntu**](#installation-de-john-the-ripper-sur-ubuntu)
 - [**Installation de HashCat sur Debian**](#installation-de-hashcat-sur-debian)
+- [**Tâche secondaire : installation de nmap et Hydra**](#tâche-secondaire--installation-de-nmap-et-hydra)
 - [**FAQ**](#faq)
 
 # Prérequis techniques
@@ -151,4 +152,25 @@ L'outil zip2john sera dans jonh/run/
 ``` bash
 ls ../run/zip2john
 ```
+
+# Tâche secondaire : installation de nmap et Hydra
+
+Vous nous avez demandé d'effectuer des attaques sur le mot de passe d'un compte local du serveur. Pour se faire nous allons avoir besoin d'installer seulement deux logiciels 
+
+**Installation de nmap**
+
+``` bash 
+apt install nmap
+```
+
+![NMAP]()
+
+**Installation de Hydra**
+
+``` bash
+apt install hydra
+```
+
+![HYDRA]()
+
 # FAQ
