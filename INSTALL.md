@@ -174,3 +174,9 @@ apt install hydra
 ![HYDRA](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/INSTALL_HYDRA1.png)
 
 # FAQ
+
+**Q1** : Qu'est ce que c'est les "protocoles CIFS" ?
+**R1** : C’est une version du protocole Server Message Block (SMB), utilisé principalement par Microsoft Windows pour les partages réseau. C’est le langage que votre Linux utilise pour discuter avec les partages Windows.
+
+**Q2** : Pourquoi c'est impossible d'installer snap sur Debian pour télécharger John The Ripper ?
+**R2** : Techniquement c'est possible, mais il va falloir activer le service etc.. Le téléchargement par clone Github est plus pratique dans cet exemple.
