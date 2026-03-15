@@ -44,9 +44,9 @@ Le mode force brute, essaye toutes les combinaisons de caractères possible jusq
 | :---------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------: |
 | **Jeremy**  |                                   Recherche sur HashCat. Préparation de l'installation du programme et de l'utilisation.                                   |   _Product owner_: Maintenir la direction du projet. Livraison de l'audit.   |
 | **Zishan**  | _Product Owner_:  Maintenir la direction du projet. Remplir le backlog. Installation des logiciels, prise de screens, test. Recherche sur John The Ripper. |                  Rédaction de INSTALL.md avec les screens.                   |
-|  **Brice**  |   _Scrum Master_: Assurer la coordination et les bonnes conditions de travail. Rédaction du README.md suivant l'avancé du projet. Recherche sur HashCat.   |                          Rédaction de USERGUID.md.                           |
+|  **Brice**  |   _Scrum Master_: Assurer la coordination et les bonnes conditions de travail. Rédaction du README.md suivant l'avancé du projet. Recherche sur HashCat.   |                          Rédaction de USERGUID.md. Recherche et mise en place de l'attaque sur le mot de passe du compte local. Documentation de la réalisation                           |
 | **Gregory** |                                     Installation des logiciels, prise de screens, test. Recherche sur John The Ripper.                                     | _Scrum Master_: Assurer la coordination et les bonnes conditions de travail. |
-| **Commun**  |                                     Installation de toutes les VM et des logiciels pour pouvoir tester en même temps.                                      |                       Test du cassage de mot de passe                        |
+| **Commun**  |                                     Installation de toutes les VM et des logiciels pour pouvoir tester en même temps.                                      |                       Test du cassage de mot de passe. Travail sur la présentation                        |
 
 
 # Choix techniques 
