@@ -1,7 +1,5 @@
-# Schéma synoptique de l'attaque
-![SCHEMAZISHAN](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Diagramme_sans_nom.drawio_1.png)
-
 # Sommaire
+- [**Schéma synoptique de l'attaque**](#schéma-synoptique-de-lattaque)
 - [**HashCat**](#hashcat)
   -  [**Utilisation de base**](#utilisation-de-base)
   -  [**Utilisation avancée**](#utilisation-avancée)
@@ -12,6 +10,10 @@
 
 - [**Attaque sur mot de passe d'un compte local**](#effectuer-des-attaques-sur-le-mot-de-passe-dun-compte-local-du-serveur)
 - [**FAQ**](#faq)
+
+# Schéma synoptique de l'attaque
+![SCHEMAZISHAN](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Diagramme_sans_nom.drawio_1.png)
+
 
 # Guide d'utilisation HashCat
 
