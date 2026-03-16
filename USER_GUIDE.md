@@ -1,8 +1,7 @@
-# Sommaire
-
 # Schéma synoptique de l'attaque
-![SCHEMAZISHAN]()
+![SCHEMAZISHAN](https://github.com/WildCodeSchool/TSSR-0226-P1-G1/blob/main/SCREENSHOT/Diagramme_sans_nom.drawio_1.png)
 
+# Sommaire
 - [**HashCat**](#hashcat)
   -  [**Utilisation de base**](#utilisation-de-base)
   -  [**Utilisation avancée**](#utilisation-avancée)
