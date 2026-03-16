@@ -1,5 +1,8 @@
 # Sommaire
 
+# Schéma synoptique de l'attaque
+![SCHEMAZISHAN]()
+
 - [**HashCat**](#hashcat)
   -  [**Utilisation de base**](#utilisation-de-base)
   -  [**Utilisation avancée**](#utilisation-avancée)
